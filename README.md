@@ -23,3 +23,8 @@ Alternatively, you can run the app by executing:
 export FLASK_APP=main.py
 python -m flask run
 ```
+# Accessing the application
+```
+Once you are running your application (see abouve section) browse to:
+http://localhost:5000/
+```
