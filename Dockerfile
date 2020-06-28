@@ -1,4 +1,4 @@
-FROM Python:3.3.8-alpine
+FROM python:3.8.3-alpine
 
 LABEL maintainer="WHO TO CALL IF PROBLEMS"
 
