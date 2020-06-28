@@ -1,0 +1,14 @@
+FROM Python:3.3.8-alpine
+
+LABEL maintainer="WHO TO CALL IF PROBLEMS"
+
+WORKDIR /app
+ADD main.py ./
+ADD requirements.txt ./
+RUN pip install -r requirements.txt
+EXPOSE 5000
+
+# This is a default thing. We want to ensure it regardless of what happens.
+ENV PORT=5000
+
+CMD ["python", "main.py"]
